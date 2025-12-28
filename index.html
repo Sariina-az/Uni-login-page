@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- start meta section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts links -->
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- stylesheet link -->
+
+    <!-- icon link -->
+    <script
+      src="https://kit.fontawesome.com/a910cbf3fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icon link -->
+
+    <!-- javascript link -->
+    <script src="/js/scripts.js" defer></script>
+    <!-- javascript link -->
+
+    <!-- page title -->
+    <title>Login Page</title>
+    <!-- page title -->
+  </head>
+  <!-- end meta section -->
+
+  <!-- start body section -->
+  <body>
+    <main>
+      <!-- start left card -->
+      <section class="container left">
+        <div class="effect">
+          <div class="heading">
+            <h1>Welcome to SimpleFlow</h1>
+            <p>Your Gateway to Effortless Management.</p>
+          </div>
+          <div class="description">
+            <h2>Seamless Collaboration</h2>
+            <p>Effortlessly work together with your team in real-time.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end left card -->
+
+      <!-- start right card -->
+      <section class="container right">
+        <div class="form-heading">
+          <img src="assets/icon.png" alt="icon" />
+          <h3>SimpleFlow</h3>
+        </div>
+        <div class="nav">
+          <button class="active">Sign Up</button>
+          <button class="">Sign In</button>
+        </div>
+
+        <!-- start form -->
+        <form action="#">
+          <div class="fields">
+            <div>
+              <label class="label" for="username">Username</label>
+              <input type="text" id="username" />
+              <span class="validation"></span>
+            </div>
+            <div>
+              <label class="label" for="full-name">Full Name</label>
+              <input type="text" id="full-name" />
+              <span class="validation"></span>
+            </div>
+            <div>
+              <label class="label" for="email">Email</label>
+              <input type="email" id="email" />
+              <span class="validation"></span>
+            </div>
+            <div>
+              <div class="label pass-label">
+                <a href="#">Forgot Password?</a>
+                <label for="password">Password</label>
+              </div>
+              <input type="password" id="password" />
+              <ul class="pass-validations">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Password Strength : Weak</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Cannot contain your name or email address</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>At least 8 characters</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Contains a number or symbol</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button disabled class="disabled">Create Account</button>
+        </form>
+        <!-- end form -->
+
+        <div class="success-message">Account Created Successfully!</div>
+        <div class="footer">
+          <p>
+            By signing up to create an account I accept Company’s
+            <br />
+            <strong>Terms of use & Privacy Policy.</strong>
+          </p>
+        </div>
+        <!-- end right card -->
+      </section>
+    </main>
+  </body>
+  <!-- end body section -->
+</html>

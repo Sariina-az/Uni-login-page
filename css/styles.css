@@ -1,0 +1,272 @@
+/* global styles for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* containers styles */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 65%;
+  min-width: 830px;
+  max-width: 900px;
+  max-height: 700px;
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  width: 50%;
+}
+
+/* left card styles */
+.left {
+  background-image: url("/assets/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.effect {
+  height: 100%;
+  width: 100%;
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgba(70, 95, 241, 0.37), rgba(70, 95, 241, 1));
+}
+.heading h1 {
+  font-family: "Figtree";
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 119%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: default;
+}
+.heading p {
+  font-family: "Figtree";
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: default;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.description h2 {
+  font-family: "Figtree";
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: default;
+}
+.description p {
+  font-family: "Figtree";
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 12px;
+  text-align: center;
+  width: 75%;
+  cursor: default;
+}
+
+/* right card styles */
+.right {
+  padding: 55px 55px 115px 55px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-heading {
+  align-self: self-start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 7px;
+}
+.form-heading h3 {
+  font-family: "Figtree";
+  color: rgba(38, 32, 59, 1);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 20px;
+  cursor: default;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+  background-color: rgba(236, 240, 255, 1);
+  padding: 4px;
+  border-radius: 8px;
+}
+.nav button {
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  color: rgba(156, 154, 165, 1);
+  font-family: "Figtree";
+  height: 25px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 13px;
+  background-color: transparent;
+}
+.active {
+  background-color: rgba(70, 95, 241, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 82%;
+  width: 100%;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 100%;
+}
+.fields > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.validation {
+  font-family: "Figtree";
+  color: rgba(220, 38, 38, 1);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0;
+  cursor: default;
+}
+.label {
+  font-family: "Figtree";
+  font-weight: 500;
+  color: rgba(38, 32, 59, 1);
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.pass-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.pass-label a {
+  font-size: 10px;
+  color: rgba(156, 154, 165, 1);
+}
+.fields input {
+  border: solid 1px rgba(70, 95, 241, 0.4);
+  box-shadow: 0px 4px 8px 0px rgba(70, 95, 241, 0.1);
+  border-radius: 8px;
+  height: 30px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-family: "Figtree";
+  font-weight: 400;
+}
+.fields input:focus {
+  outline: none;
+}
+.pass-validations {
+  list-style: none;
+}
+.pass-validations span {
+  color: rgba(156, 154, 165, 1);
+  font-family: "Figtree";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0;
+  cursor: default;
+}
+.pass-validations i {
+  font-size: 10px;
+  margin-right: 3px;
+  color: rgba(156, 154, 165, 1);
+}
+form button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(70, 95, 241, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Figtree";
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+  background-color: rgba(70, 95, 241, 0.7);
+}
+.success-message {
+  display: none;
+  position: absolute;
+  bottom: 65px;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(21, 128, 61, 1);
+  cursor: default;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 55%;
+  text-align: center;
+  font-family: "Figtree";
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 9px;
+  margin-bottom: 15px;
+  color: rgba(156, 154, 165, 1);
+}
+.footer strong {
+  color: rgba(38, 32, 59, 1);
+}
